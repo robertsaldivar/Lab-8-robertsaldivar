@@ -16,3 +16,14 @@ library(tidyverse)
 salmon <- read_csv("salmon_imports.csv")
 ```
 
+```{r}
+# Creating Exploratory Scatterplot
+
+salmon_scatter <- ggplot(salmon, aes(x=year, y=salmon_fresh)) +
+  geom_point()
+salmon_scatter
+
+#overall there appears to be a relationship between the year and the salmon imports. There are some years that do not meet the expectation of the relationship.
+
+```
+
