@@ -40,3 +40,14 @@ salmon_model
 # The Y intercept means that at "year 0" there was -14982920 tons of salmon being imported. That is concerning because that is impossible for a variety of reasons. That means it is not possible to extrapolate data into the past.
 ```
 
+```{r}
+#Model Diagnostics
+
+par(mfrow = c(2,2))
+salmon_model_plot <- plot(salmon_model)
+salmon_model_plot
+
+#The residuals appear to be normally distrubuted
+#There does not appear to be any concern of hertoscedasticity or any major outliers
+```
+
