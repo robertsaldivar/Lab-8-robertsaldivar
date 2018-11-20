@@ -73,3 +73,15 @@ salmon_final_graph <- ggplot(salmon, aes(x=year, y=salmon_fresh)) +
 salmon_final_graph
 ```
 
+```{r}
+#Making predictions using the model
+
+new_years <- data.frame(year = c(2022, 2024, 2026, 2028))
+
+future_predict <- predict(salmon_model, newdata = new_years, interval = "confidence")
+future_predict
+
+predictions <- data.frame(new_years, future_predict)
+predictions
+```
+
