@@ -85,3 +85,12 @@ predictions <- data.frame(new_years, future_predict)
 predictions
 ```
 
+```{r}
+#Finding Pearson's r(correlation)
+
+salmon_correlation <- cor.test(salmon$year, salmon$salmon_fresh)
+salmon_correlation
+
+#There is a strong positive correlation between the year and salmon imported
+```
+

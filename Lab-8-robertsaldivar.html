@@ -231,6 +231,22 @@ predictions</code></pre>
 ## 2 2024 297397.6 281656.7 313138.5
 ## 3 2026 312496.8 295418.5 329575.0
 ## 4 2028 327595.9 309166.6 346025.2</code></pre>
+<pre class="r"><code>#Finding Pearson's r(correlation)
+
+salmon_correlation &lt;- cor.test(salmon$year, salmon$salmon_fresh)
+salmon_correlation</code></pre>
+<pre><code>## 
+##  Pearson's product-moment correlation
+## 
+## data:  salmon$year and salmon$salmon_fresh
+## t = 21.723, df = 26, p-value &lt; 2.2e-16
+## alternative hypothesis: true correlation is not equal to 0
+## 95 percent confidence interval:
+##  0.9429434 0.9878307
+## sample estimates:
+##       cor 
+## 0.9735387</code></pre>
+<pre class="r"><code>#There is a strong positive correlation between the year and salmon imported</code></pre>
 
 
 
