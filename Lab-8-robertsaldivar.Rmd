@@ -60,3 +60,16 @@ summary(salmon_model)
 #The proportion of salmon imports that cannot be explained by year is 0.0522
 ```
 
+```{r}
+#Prepare a final graph
+
+salmon_final_graph <- ggplot(salmon, aes(x=year, y=salmon_fresh)) +
+  geom_point() +
+  geom_smooth(method = lm, se = TRUE, size = 0.5, color = "grey20") +
+  theme_bw() +
+  scale_x_continuous(expand = c(0,0), limits = c(1990, 2017)) +
+  labs(x = "Year", y = "U.S. Annual Fresh Salmon Imports\n(1,000 pounds)")
+
+salmon_final_graph
+```
+
