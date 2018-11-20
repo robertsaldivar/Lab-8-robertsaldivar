@@ -94,3 +94,4 @@ salmon_correlation
 #There is a strong positive correlation between the year and salmon imported
 ```
 
+"The year significantly predicts salmon imports(t=7.55e+03, t(26) = 21.7, *p* < 0.001) with a strong correlation between the two (Pearson's r = 0.97). the overall model (salmon imports(tons) = 7550(year) - 14982940) explains the significant amount of variance in salmon imports (F(1,26) = 472 *p* < 0.001, R^2^ = 0.95"
