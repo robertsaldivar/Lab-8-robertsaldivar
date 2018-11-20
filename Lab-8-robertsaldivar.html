@@ -178,6 +178,30 @@ salmon_model_plot &lt;- plot(salmon_model)</code></pre>
 <pre><code>## NULL</code></pre>
 <pre class="r"><code>#The residuals appear to be normally distrubuted
 #There does not appear to be any concern of hertoscedasticity or any major outliers</code></pre>
+<pre class="r"><code>#Explore model fit and significance
+
+summary(salmon_model)</code></pre>
+<pre><code>## 
+## Call:
+## lm(formula = salmon_fresh ~ year, data = salmon)
+## 
+## Residuals:
+##    Min     1Q Median     3Q    Max 
+## -49619  -6284   2722   9063  17884 
+## 
+## Coefficients:
+##               Estimate Std. Error t value Pr(&gt;|t|)    
+## (Intercept) -1.498e+07  6.963e+05  -21.52   &lt;2e-16 ***
+## year         7.550e+03  3.475e+02   21.72   &lt;2e-16 ***
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## Residual standard error: 14860 on 26 degrees of freedom
+## Multiple R-squared:  0.9478, Adjusted R-squared:  0.9458 
+## F-statistic: 471.9 on 1 and 26 DF,  p-value: &lt; 2.2e-16</code></pre>
+<pre class="r"><code>#this model can significanly predict salmon imports by the year
+#R^2 is a measure to predict how well the model can predict the outcome of dependent variable(salmon imports) by the independent variable(year)
+#The proportion of salmon imports that cannot be explained by year is 0.0522</code></pre>
 
 
 
