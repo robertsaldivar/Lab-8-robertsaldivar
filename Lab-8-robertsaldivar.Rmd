@@ -27,3 +27,16 @@ salmon_scatter
 
 ```
 
+```{r}
+#Linear Regression
+
+salmon_model <- lm(salmon_fresh ~ year, data = salmon)
+salmon_model
+
+#model equation y=7550x-14982940 or imports(tons)=7550(year)-14982940
+
+#the slope in the context of this model means that for every increase in year there is approximately an increase of 7550 tons of salmon imported
+
+# The Y intercept means that at "year 0" there was -14982920 tons of salmon being imported. That is concerning because that is impossible for a variety of reasons. That means it is not possible to extrapolate data into the past.
+```
+
